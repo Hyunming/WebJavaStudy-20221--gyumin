@@ -25,7 +25,7 @@ public class Conditon3 {
             grade = "X";
         }
         else if ( score > 89) {
-            grade = "A";
+            grade = "j10_접근지정자/A";
         } else if (score > 79) {
             grade = "B";
         } else if (score > 69) {
