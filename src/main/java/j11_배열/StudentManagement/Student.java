@@ -16,6 +16,14 @@ public class Student {
         this.math = math;
         calculation();
     }
+    public void updateStudent(Student updateStudent) {
+        this.kor = updateStudent.kor;
+        this.name = updateStudent.name;
+        this.eng = updateStudent.eng;
+        this.math = updateStudent.math;
+
+        calculation();
+    }
     private  void calculation() {
         settotalScore();
         setAvgScore();
@@ -51,4 +59,7 @@ public class Student {
             System.out.println("학점 : " + grade);
     }
 
+    public String getName() {
+        return name;
+    }
 }

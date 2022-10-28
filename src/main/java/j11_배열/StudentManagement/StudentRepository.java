@@ -37,6 +37,33 @@ public class StudentRepository {
         return tempArray.length-1;
 
     }
+    public  Student[] getStudents(){
+        return students;
+    }
+    public int findStudentByName(String name) {
+        for (int i = 0; i < students.length; i++) {
+            if (students[i] != null) {
+                if(students[i].getName().equals(name)) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+    public Student getStudents(int index) {
+        return students[index];
+    }
+    public Student removeStudent(int index) {
+        Student student = students[index];
+        students[index]=null;
+        return student;
+    }
+    public Student updateStudent(int index, Student updateStudent) {
+        Student student = students[index];
+        student.updateStudent(updateStudent);
+        return student;
+    }
+
 
 
 }
