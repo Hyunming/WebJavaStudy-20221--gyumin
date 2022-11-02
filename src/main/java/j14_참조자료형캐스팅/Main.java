@@ -8,7 +8,10 @@ public class Main {
         LED led = new LED();
         Speaker speaker = new Speaker();
 
-        CentralControl centralControl = new CentralControl( led,computer2, speaker);//업캐스팅 묵시적 형변환 가능
+        CentralControl centralControl = new CentralControl(new Power[5]);//업캐스팅 묵시적 형변환 가능
+        centralControl.addDevice(computer1);
+        centralControl.addDevice(speaker);
+        centralControl.addDevice(led);
         centralControl.powerOn();
         System.out.println("----------------------------------------------------");
         centralControl.powerOff();
