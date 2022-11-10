@@ -37,6 +37,7 @@ public class StudentSet {
         for(Student str : students){//처음부터 끝가지 전부다 꺼넬떄가지 반복한다 리스트의 긑에 도달할떄까지
             if(str.getId()== 20220004){
                 str.setName("설민수");
+                break;
             }
         }
         for(Student str : students){//처음부터 끝가지 전부다 꺼넬떄가지 반복한다 리스트의 긑에 도달할떄까지
@@ -45,7 +46,7 @@ public class StudentSet {
                 break;
             }
         }
-        int i =20220000;
+        int i =20220001;
         int j =0;
         List<Student> studentList = new ArrayList<Student>();
         while(j <= students.size()){
