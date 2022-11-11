@@ -5,7 +5,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 
 public class JSON1 {
-    public static void main(String[] args){
+    public static void main(String[] args){//ㅇ이게 제이슨은아니고 걍 좀 편하개 봐꿔주는 정도?
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("username","junil");
         jsonObject.addProperty("password","1234");
