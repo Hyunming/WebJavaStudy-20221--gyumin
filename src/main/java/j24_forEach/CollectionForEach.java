@@ -26,9 +26,9 @@ public class CollectionForEach {
             @Override
             public void accept(String name) {
                 System.out.println(name);
-            }
+            }//<-이렇게 생긴거 익명클래스인거 기억하지?
         };
-        Consumer<String> consumer = name/*매계뱐수는 하나일떄는 괄호 생략가능*/ -> /*->이게new Consumer<String>() {   //<-이건 람다
+        Consumer<String> consumer = name/*매계변수는 하나일떄는 괄호 생략가능*/ -> /*->이게new Consumer<String>() {   //<-이건 람다
             @Override
             public void accept 랑같은 의미다*/ {
             System.out.println(name);
